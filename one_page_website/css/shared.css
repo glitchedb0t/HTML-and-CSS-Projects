@@ -2,7 +2,7 @@
   
 html {
     font-family: sans-serif;
-    font-size: 62.5%;
+    font-size: 50%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -236,9 +236,13 @@ section {
 }
 
 .contact {
-    width: 60%;
+    width: 50%;
     padding: 10px;
     border-radius: 8px;
+    border-top-color: #f5e99b;
+    border-right-color: #f5e99b;
+    border-bottom-color: #f5e99b;
+    border-left-color: #f5e99b;
     margin: 0px auto;
     background-color: #96c6ef;
     opacity: .9;
@@ -287,16 +291,15 @@ section {
     background: #375b86;
     opacity: .9;
     box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
-    font-family: 'Raleway', sans-serif;
 }
 
-.contact input [type="text"] {
-    font-size: 15px;
+.contact input[type="text"] {
+    font-size: 16px;
     outline: none;
-    font-weight: 600;
-    color: #8d8e8f;
+    font-weight: 500;
+    color: #fbef79;
     padding: 2% 1% 2% 7%;
-    width: 80%;
+    width: 60%;
     border-top: 1px solid #090b0d;
     border-right: 2px solid #424549;
     border-bottom: 2px solid #424549;
@@ -305,11 +308,11 @@ section {
     border-radius: 7px;
     background-color: #13161b;
     box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
-    font-family: 'Raleway', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.contact input [type="text"] {
-    box-shadow: 0 0 18px rgba(100, 65, 0, .8);
+.contact input[type="text"] {
+    box-shadow: 0 0 18px #96c6ef;
 }
 
 .form-spacer {
@@ -339,6 +342,10 @@ section {
     color: rgb(255, 255, 255);
     cursor: pointer;
     border: none;
+    border-top: 1px solid #090b0d;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090b0d;
     font-weight: 900;
     outline: none;
     text-align: center;
