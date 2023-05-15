@@ -1,0 +1,124 @@
+body {
+    padding-top: 15px;
+}
+
+footer {
+    text-align: center;
+    font-weight: 700;
+}
+
+table, th, td {
+    border: 2px solid black;
+    margin-bottom: 2%;
+}
+
+th {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p:hover {
+    background-color: yellow;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 32%;
+    filter: grayscale(100%);
+    border: 2px solid black;
+    border-radius:5px 5px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.container {
+    position: relative;
+    width: 80.5%;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .centered {
+    opacity: 1;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+    opacity: 0;
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text {
+    background-color: aqua;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 150px;
+    color: red;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.video {
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    p {
+        background-color: blue;
+    }
+}
