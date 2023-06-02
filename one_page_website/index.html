@@ -6,6 +6,7 @@
 		<title>Vault-Tec Corporation | Enjoy Vault Living!</title>
 		<link rel = "stylesheet" href = "./css/shared.css">
 		<link rel = "stylesheet" href = "./css/animations.css">
+		<script src = "javascript/one_page_website.js" defer></script>
 	</head>
 	
 	<body>
@@ -45,89 +46,65 @@
 				<div class = "flex-container">
 				
 					<!-- PHOTO CONTAINER 1 -->
-					<div class = "photo-container">
-						<div class = "photo">
-							<img src = "./images/thumb/thumbnail_1.jpg" width = "960" height = "540" alt = "Large vault door with the number 63 on the front">
-							<div class = photo-overlay>
-								<h3>Click to Enlarge</h3>
-							</div>
+					<div class = "row">
+						<div class = "column">
+							<img src = "./images/thumb/thumbnail_1.jpg" onclick = "openModal();currentSlide(1)">
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 1 -->
 					
 					<!-- PHOTO CONTAINER 2 -->
-					<div class = "photo-container">
-						<div class = "photo">
-							<img src = "./images/thumb/thumbnail_2.jpg" width = "960" height = "540" alt = "Main entryway with adjoining facilities, decorated in blue and white">
-							<div class = "photo-overlay">
-								<h3>Click to Enlarge</h3>
-							</div>
+					<div class = "row">
+						<div class = "column">
+							<img src = "./images/thumb/thumbnail_2.jpg" onclick = "openModal();currentSlide(2)">
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 2 -->
 					
 					<!-- PHOTO CONTAINER 3 -->
-					<div class = "photo-container">
-						<div class = "photo">
-							<img src = "./images/thumb/thumbnail_3.jpg" width = "960" height = "540" alt = "Personal bedroom with a desk, bookcase, and computer, that adjoins to an open living room">
-							<div class = "photo-overlay">
-								<h3>Click to Enlarge</h3>
-							</div>
+					<div class = "row">
+						<div class = "column">
+							<img src = "./images/thumb/thumbnail_3.jpg" onclick = "openModal();currentSlide(3)">
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 3 -->
 					
 					<!-- PHOTO CONTAINER 4 -->
-					<div class = "photo-container">
-						<div class = "photo">
-							<img src = "./images/thumb/thumbnail_4.jpg" width = "960" height = "540" alt = "Cafeteria with diner seating and table seating">
-							<div class = "photo-overlay">
-								<h3>Click to Enlarge</h3>
-							</div>
+					<div class = "row">
+						<div class = "column">
+							<img src = "./images/thumb/thumbnail_4.jpg" onclick = "openModal();currentSlide(4)">
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 4 -->
 					
 					<!-- PHOTO CONTAINER 5 -->
-					<div class = "photo-container">
-						<div class = "photo">
-							<img src = "./images/thumb/thumbnail_5.jpg" width = "960" height = "540" alt = "Classroom with rows of desks and a blackboard in the front of the room">
-							<div class = "photo-overlay">
-								<h3>Click to Enlarge</h3>
-							</div>
+					<div class = "row">
+						<div class = "column">
+							<img src = "./images/thumb/thumbnail_5.jpg" onclick = "openModal();currentSlide(5)">
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 5 -->
 					
 					<!-- PHOTO CONTAINER 6 -->
-					<div class = "photo-container">
-						<div class = "photo">
-							<img src = "./images/thumb/thumbnail_6.jpg" width = "960" height = "540" alt = "Armory displaying racks of weapons and a monitoring station">
-							<div class = "photo-overlay">
-								<h3>Click to Enlarge</h3>
-							</div>
+					<div class = "row">
+						<div class = "column">
+							<img src = "./images/thumb/thumbnail_6.jpg" onclick = "openModal();currentSlide(6)">
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 6 -->
 					
 					<!-- PHOTO CONTAINER 7 -->
-					<div class = "photo-container">
-						<div class = "photo">
-							<img src = "./images/thumb/thumbnail_7.jpg" width = "960" height = "540" alt = "Lounge occupied by two Vault Dwellers playing Chess and drinking beverages">
-							<div class = "photo-overlay">
-								<h3>Click to Enlarge</h3>
-							</div>
+					<div class = "row">
+						<div class = "column">
+							<img src = "./images/thumb/thumbnail_7.jpg" onclick = "openModal();currentSlide(7)">
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 7 -->
 					
 					<!-- PHOTO CONTAINER 8 -->
-					<div class = "photo-container">
-						<div class = "photo">
-							<img src = "./images/thumb/thumbnail_8.jpg" width = "960" height = "540" alt = "Overseer stares over the decorated Main Hall of the Vault">
-							<div class = "photo-overlay">
-								<h3>Click to Enlarge</h3>
-							</div>
+					<div class = "row">
+						<div class = "column">
+							<img src = "./images/thumb/thumbnail_8.jpg" onclick = "openModal();currentSlide(8)">
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 8 -->
@@ -135,6 +112,98 @@
 			</div>
 		</section>
 		<!-- END GALLERY -->
+
+		<!-- LIGHTBOX MODAL START -->
+		<div id = "myModal" class = "modal">
+			<span class = "close cursor" onclick = "closeModal()">&times;</span>
+			<div class = "modal-content">
+
+			<div class = "mySlides">
+				<div class = "numbertext">1 / 8</div>
+				<img src = "./images/thumb/thumbnail_1.jpg" style = "width:100%">
+			</div>
+
+			<div class = "mySlides">
+				<div class = "numbertext">2 / 8</div>
+				<img src = "./images/thumb/thumbnail_2.jpg" style = "width:100%">
+			</div>
+
+			<div class = "mySlides">
+				<div class = "numbertext">3 / 8</div>
+				<img src = "./images/thumb/thumbnail_3.jpg" style = "width:100%">
+			</div>
+
+			<div class = "mySlides">
+				<div class = "numbertext">4 / 8</div>
+				<img src = "./images/thumb/thumbnail_4.jpg" style = "width:100%">
+			</div>
+
+			<div class = "mySlides">
+				<div class = "numbertext">5 / 8</div>
+				<img src = "./images/thumb/thumbnail_5.jpg" style = "width:100%">
+			</div>
+
+			<div class = "mySlides">
+				<div class = "numbertext">6 / 8</div>
+				<img src = "./images/thumb/thumbnail_6.jpg" style = "width:100%">
+			</div>
+
+			<div class = "mySlides">
+				<div class = "numbertext">7 / 8</div>
+				<img src = "./images/thumb/thumbnail_7.jpg" style = "width:100%">
+			</div>
+
+			<div class = "mySlides">
+				<div class = "numbertext">8 / 8</div>
+				<img src = "./images/thumb/thumbnail_8.jpg" style = "width:100%">
+			</div>
+
+			<!-- LIGHTBOX MODAL NEXT/PREVIOUS CONTROLS -->
+			<a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+			<a class = "next" onclick = "plusSlides(1)">&#10095;</a>
+
+
+			<!-- LIGHTBOX MODAL CAPTION TEXT -->
+			<div class = "caption-container">
+				<p id = "caption"></p>
+			</div>
+
+			<!-- LIGHTBOX MODAL THUMBNAIL IMAGE CONTROLS -->
+			<div class = "thumbnail_image">
+				<img class = "demo" src = "images/full/full_1.jpg" style = "width:100%" onclick = "currentSlide(1)" alt = "Large vault door with the number 63 on the front">
+			</div>
+
+			<div class = "thumbnail_image">
+				<img class = "demo" src = "images/full/full_2.jpg" style = "width:100%" onclick = "currentSlide(2)" alt = "Main entryway with adjoining facilities, decorated in blue and white">
+			</div>
+			
+			<div class = "thumbnail_image">
+				<img class = "demo" src = "images/full/full_3.jpg" style = "width:100%" onclick = "currentSlide(3)" alt = "Personal bedroom with a desk, bookcase, and computer, that adjoins to an open living room">
+			</div>
+
+			<div class = "thumbnail_image">
+				<img class = "demo" src = "images/full/full_4.jpg" style = "width:100%" onclick = "currentSlide(4)" alt = "Cafeteria with diner seating and table seating">
+			</div>
+
+			<div class = "thumbnail_image">
+				<img class = "demo" src = "images/full/full_5.jpg" style = "width:100%" onclick = "currentSlide(5)" alt = "Classroom with rows of desks and a blackboard in the front of the room">
+			</div>
+
+			<div class = "thumbnail_image">
+				<img class = "demo" src = "images/full/full_6.jpg" style = "width:100%" onclick = "currentSlide(6)" alt = "Armory displaying racks of weapons and a monitoring station">
+			</div>
+
+			<div class = "thumbnail_image">
+				<img class = "demo" src = "images/full/full_7.jpg" style = "width:100%" onclick = "currentSlide(7)" alt = "Lounge occupied by two Vault Dwellers playing Chess and drinking beverages">
+			</div>
+
+			<div class = "thumbnail_image">
+				<img class = "demo" src = "images/full/full_8.jpg" style = "width:100%" onclick = "currentSlide(8)" alt = "Overseer stares over the decorated Main Hall of the Vault">
+			</div>
+
+			</div>
+		</div>
+		<!-- LIGHTBOX MODAL END -->
 		
 		<!-- VIDEO -->
 		<section id = "video">
